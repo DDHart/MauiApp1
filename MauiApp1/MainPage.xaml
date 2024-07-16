@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="GreenYellow">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+           
+
+            <Label
+                Text="Hello, I LOVE Animals!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+           
+
+            <Button
+                x:Name="GoUp"
+                FontFamily="MaterialSymbolsOutlined"
+                FontSize="35"
+                Text="&#xe5d8;"
+                TextColor="#43f527"
+                Margin="40"
+                WidthRequest="50"
+                Clicked="GoUpClicked"/>
+
+            <Image
+                  x:Name="ChangeImg"
+                  Source="animal1.jpeg"
+                  HeightRequest="185"
+                  Aspect="AspectFit"
+                  SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Button
+                 x:Name="GoDown"
+                 FontFamily="MaterialSymbolsOutlined"
+                 FontSize="35"
+                 Text="&#xe5db;"
+                 TextColor="#43f527"
+                 Margin="40"
+                 WidthRequest="50"
+                 Clicked="GoDownClicked"/>    
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
