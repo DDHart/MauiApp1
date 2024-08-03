@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.UserPage"
+             xmlns:models="clr-namespace:MauiApp1.Models"
+             Title="UserPage">
+
+    <VerticalStackLayout Margin="20"
+                         Spacing="6">
+        
+        <Label Text="Registration Page:" FontSize="Large" Margin="20" VerticalTextAlignment="Start"/>
+        
+            <HorizontalStackLayout Spacing="15" Padding="0">
+                
+                <Label Text="Name: "
+                      FontSize="18"  WidthRequest="90" />
+                <Frame BorderColor="Black"
+                Padding="5">
+                    <Entry BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Name}"/>
+                </Frame>
+            </HorizontalStackLayout>
+       
+       
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="User Name: "
+                     FontSize="18" WidthRequest="90"/>
+                <Frame BorderColor="Black"
+                    Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding UserName}"/>
+                </Frame>
+            </HorizontalStackLayout>
+        
+       
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Email: "
+                    FontSize="18"  WidthRequest="90" />
+            <Frame BorderColor="Black"
+                 Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Email}"/>
+            </Frame>
+        </HorizontalStackLayout>
+        
+        
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Password: "
+            FontSize="18"  WidthRequest="90" />
+            <Frame BorderColor="Black" Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Password}"/>
+            </Frame>
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout Spacing="15">
+                <Label Text="Date of Birth: "
+                        FontSize="18"  WidthRequest="90" />
+            <Frame BorderColor="Black" Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding DateBirth}"/>
+            </Frame>
+        </HorizontalStackLayout>
+       
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Phone: "
+                        FontSize="18"  WidthRequest="90" />
+            <Frame BorderColor="Black" Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Phone}"/>
+            </Frame>
+        </HorizontalStackLayout>
+       
+            <HorizontalStackLayout Spacing="15">
+                <Label Text="Photo: "
+                FontSize="18"  WidthRequest="90" />
+            <Frame BorderColor="Black" Padding="5">
+                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding UsrPhoto}"/>
+            </Frame>
+        </HorizontalStackLayout>
+        
+
+        <Button WidthRequest="150" HorizontalOptions="Center" FontSize="18"
+           BackgroundColor="Black" Text="Submit" TextColor="White"
+             />
+    </VerticalStackLayout>
+
+
+</ContentPage>

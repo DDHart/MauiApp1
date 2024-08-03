@@ -6,7 +6,13 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+
+            //MainPage = new CodeBehindPage();
+
+            // MainPage = new BindingEx();
+
+            MainPage = new UserPage();
         }
     }
 }
