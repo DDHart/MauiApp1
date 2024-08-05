@@ -3,17 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.UserPage"
              xmlns:models="clr-namespace:MauiApp1.Models"
-             Title="UserPage">
+             Title="UserPage"
+             BackgroundImageSource="animal3_bg.jpg"
+             
+>
 
     <VerticalStackLayout Margin="20"
-                         Spacing="6">
+                         Spacing="6"
+                                                
+                         >
         
-        <Label Text="Registration Page:" FontSize="Large" Margin="20" VerticalTextAlignment="Start"/>
+        <Label Text="Registration Page:" FontSize="Large" Margin="20" VerticalTextAlignment="Start" FontAttributes="Bold" />
         
             <HorizontalStackLayout Spacing="15" Padding="0">
                 
                 <Label Text="Name: "
-                      FontSize="18"  WidthRequest="90" />
+                      FontSize="18"  WidthRequest="90" FontAttributes="Bold" />
                 <Frame BorderColor="Black"
                 Padding="5">
                     <Entry BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Name}"/>
@@ -85,11 +90,13 @@
         <Button WidthRequest="150" HorizontalOptions="Center" FontSize="18"
            BackgroundColor="Black" Text="Submit" TextColor="White" Clicked="CheckData"
              />
-
+        
+        <VerticalStackLayout x:Name="validLayout" BackgroundColor="Transparent">
         <Label x:Name="ValidMsg"/>
         <Label x:Name="ValidAge"/>
         <Label x:Name="ValidPass"/>
         <Label x:Name="ValidUserName"/>
+        </VerticalStackLayout>
     </VerticalStackLayout>
 
 

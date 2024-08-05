@@ -95,6 +95,9 @@ public partial class UserPage : ContentPage
             ValidPass.Text += ". Password is not valid (" + usr.Password + ") - at least one capital letter and a digit";
             validOk = false;
         }
+
+        if (!validOk)
+            validLayout.BackgroundColor = Color.Parse("Bisque");
         //return validOk;
     }
 }

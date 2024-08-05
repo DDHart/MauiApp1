@@ -59,7 +59,10 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\animal1.jpeg" />
 	  <None Remove="Resources\Images\animal2.jpeg" />
+	  <None Remove="Resources\Images\animal2_bg.jpg" />
 	  <None Remove="Resources\Images\animal3.jpeg" />
+	  <None Remove="Resources\Images\animal3_bg.jpg" />
+	  <None Remove="Resources\Images\animal_bg.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
