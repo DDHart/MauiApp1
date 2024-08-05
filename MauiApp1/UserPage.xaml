@@ -19,9 +19,8 @@
                     <Entry BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding Name}"/>
                 </Frame>
             </HorizontalStackLayout>
-       
-       
-            <HorizontalStackLayout Spacing="15">
+
+        <HorizontalStackLayout Spacing="15">
                 <Label Text="User Name: "
                      FontSize="18" WidthRequest="90"/>
                 <Frame BorderColor="Black"
@@ -50,14 +49,23 @@
         </HorizontalStackLayout>
         
         <HorizontalStackLayout Spacing="15">
-                <Label Text="Date of Birth: "
-                        FontSize="18"  WidthRequest="90" />
+            <Label Text="Date of Birth (DD/MM/YY): "
+                        FontSize="16"  WidthRequest="90"/>
             <Frame BorderColor="Black" Padding="5">
-                <Entry  BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding DateBirth}"/>
-            </Frame>
+                <!--
+                <Entry BackgroundColor="Beige" HeightRequest="50" WidthRequest="230" Text="{Binding DateBirth}" />
+                -->
+                <DatePicker BackgroundColor="Beige" HeightRequest="50" 
+                WidthRequest="230" Date="{Binding DateBirth}" />
+                
+             </Frame>
         </HorizontalStackLayout>
-       
-            <HorizontalStackLayout Spacing="15">
+        <HorizontalStackLayout Spacing="15" Padding="0">
+
+            <Label Text="" x:Name="CalcAge" FontSize="18" TextColor="LightPink" WidthRequest="200" />
+
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="15">
                 <Label Text="Phone: "
                         FontSize="18"  WidthRequest="90" />
             <Frame BorderColor="Black" Padding="5">
@@ -75,8 +83,13 @@
         
 
         <Button WidthRequest="150" HorizontalOptions="Center" FontSize="18"
-           BackgroundColor="Black" Text="Submit" TextColor="White"
+           BackgroundColor="Black" Text="Submit" TextColor="White" Clicked="CheckData"
              />
+
+        <Label x:Name="ValidMsg"/>
+        <Label x:Name="ValidAge"/>
+        <Label x:Name="ValidPass"/>
+        <Label x:Name="ValidUserName"/>
     </VerticalStackLayout>
 
 

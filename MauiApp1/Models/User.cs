@@ -15,7 +15,7 @@ namespace MauiApp1.Models
         private string? email;
 		private string? phone;
 		private string? password;
-        private string? dateBirth;
+        private DateTime dateBirth;
         private string? usrPhoto;
         public static int baseId = 0;
 
@@ -36,7 +36,7 @@ namespace MauiApp1.Models
             set { password = value; OnPropertyChanged(); }
         }
 
-        public string? DateBirth
+        public DateTime DateBirth
         {
             get { return dateBirth; }
             set { dateBirth = value; OnPropertyChanged(); }
